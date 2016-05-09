@@ -41,10 +41,18 @@ function scrollEffects() {
 		$(".nav-bar").removeClass("nav-bar-ghost");
 		}
 	});
+
+	$("nav").hover(function() {
+		$(".nav-bar").removeClass("nav-bar-ghost");
+	}, function() {
+		if (scroll_top >= 1) {
+			$(".nav-bar").addClass("nav-bar-ghost");
+		}
+	});
+
 	$(window).scroll(function () {
 		var scroll_top = $(this).scrollTop();
 		if($(window).width() < 980) {
-			console.log("mobile");
 			if (scroll_top >= 1) {
 				$(".slicknav_menu").addClass("nav-float");
 			} 
@@ -55,7 +63,7 @@ function scrollEffects() {
 		}
 		if($(window).width() > 980) {
 			console.log("desktop");
-			if (scroll_top >= 185) {
+			if (scroll_top >= 145) {
 				$(".nav-bar").addClass("nav-float");
 			} 
 			else {
@@ -64,12 +72,14 @@ function scrollEffects() {
 			}
 		}
 	});
+
 	$(window).scroll(function () {
 		var scroll_top = $(this).scrollTop();
 		if ((scroll_top >= 580)) {
 			$('.fade').addClass('fadeInUp');
 		}
 	});
+
 }
 
 
