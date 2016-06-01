@@ -76,7 +76,7 @@ function scrollEffects() {
 	$(window).scroll(function () {
 		var scroll_top = $(this).scrollTop();
 		if ((scroll_top >= 580)) {
-			$('.fade').addClass('fadeInUp');
+			$('[data-fade]').addClass('fadeInUp');
 		}
 	});
 
