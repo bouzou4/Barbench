@@ -1,21 +1,5 @@
 var scriptsJS = (function($){
 
-function makeCarousel() {
-	$('[data-carousel]').owlCarousel({
-		items: 1,
-		loop: true,
-		autoplay: true,
-		slideSpeed: 1600,
-		autoplayTimeout: 5000
-	});
-}
-
-function mobileNav() {
-	$('.nav-bar').slicknav({
-		label: "",
-		closeOnClick: true
-	});
-}
 
 function scrollEffects() {
 	$('a[href*=#]:not([href=#])').click(function() {
@@ -24,7 +8,7 @@ function scrollEffects() {
 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 			if (target.length) {
 				$('html,body').animate({
-					scrollTop: (target.offset().top - 100)
+					scrollTop: (target.offset().top + 100)
 				}, 1000);
 			return false;
 			}
@@ -79,7 +63,6 @@ function scrollEffects() {
 			$('[data-fade]').addClass('fadeInUp');
 		}
 	});
-
 }
 
 
@@ -89,9 +72,7 @@ function scrollEffects() {
 function init(){
 	$(document).ready(function(){
 		console.log("hey man");
-		makeCarousel();
 		scrollEffects();
-		mobileNav();
 	});
 }
 
