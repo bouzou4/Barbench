@@ -1,3 +1,5 @@
+ /* Site Styles */
+
 html {
 	margin:0;
 	padding:0;
@@ -54,6 +56,24 @@ a {
 	color: grey;
 }
 
+.home-row {
+
+}
+
+.product-image {
+	display: block;
+	width: 100%;
+	max-width: 800px;
+}
+
+.body-copy {
+	padding: 0 5%;
+	line-height: 1.4;
+	color: #363636;
+}
+
+/* End Site Styles */
+
 /* Header */
 
 .main-title {
@@ -62,9 +82,9 @@ a {
 }
 
 
-/* End */
+/* End Header */
 
-/* NAVBAR STUFF*/
+/* Nav Styles */
 
 nav {
 	position: absolute;
@@ -157,7 +177,7 @@ a.nav-item {
   background-color: #6D6D6D;
 }
 
-/* End */
+/* End Nav Styles */
 
 /* Product */
 
@@ -165,7 +185,7 @@ a.nav-item {
 	margin-top: 5%;
 }
 
-/* End */
+/* End Product */
 
 /* Contact Page */
 
@@ -184,7 +204,7 @@ a.nav-item {
 }
 
 
-/* End */
+/* End Contact */
 
 /* Footer */
 
@@ -240,24 +260,4 @@ a.nav-item {
 	float: left;
 	margin: auto 0;
 }
-/* End */
-
-/* Site-wide Classes */
-
-.home-row {
-
-}
-
-.product-image {
-	display: block;
-	width: 100%;
-	max-width: 800px;
-}
-
-.body-copy {
-	padding: 0 5%;
-	line-height: 1.4;
-	color: #363636;
-}
-
-/* End */
+/* End Footer */
