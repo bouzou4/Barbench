@@ -3,189 +3,171 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>title</title>
-  <meta name="description" content="description">
+  <title>The BarBench</title>
+  <meta name="description" content="Introducing the BarBench">
 </head>
-<body class="center-block">
-  <script src="bundle.js"></script>
-  <div class="row">
-    <div class="main-title container col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-      <img src="img/bar-bench.svg" alt="The BarBench" class="center-block img-responsive">
-    </div>
+<body class="d-block mx-auto">
+  <div class="main-title container col-lg-8 offset-lg-2 col-sm-10 offset-sm-1 col-12">
+    <img src="img/bar-bench.svg" alt="The BarBench" class="d-block mx-auto img-fluid">
   </div>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-expand-md">
     <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-nav" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-nav" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="my-nav">
-        <ul class="nav nav-justified">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#product">Product</a></li>
-          <li><a href="#about">About</a></li>
-          <li id="end"><a href="#contact">Contact</a></li>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#product" class="nav-link">Product</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li id="end" class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="row">
-    <div class="carousel slide col-md-10 col-md-offset-1 col-xs-12" data-ride="carousel"> 
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="img/bb-1.jpg" alt="img1">
-        </div>
-        <div class="item">
-          <img src="img/bb-2.jpg" alt="img2">
-        </div>
-        <div class="item">
-          <img src="img/bb-3.jpg" alt="img3">
-        </div>
-        <div class="item">
-          <img src="img/bb-4.jpg" alt="img4">
-        </div>
-        <div class="item">
-          <img src="img/bb-5.jpg" alt="img5">
-        </div>
+  <div id="main-car" class="carousel slide col-md-10 offset-md-1 col-12" data-ride="carousel"> 
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/bb-1.jpg" alt="img1" class="img-fluid d-block mx-auto">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bb-2.jpg" alt="img2" class="img-fluid d-block mx-auto">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bb-3.jpg" alt="img3" class="img-fluid d-block mx-auto">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bb-4.jpg" alt="img4" class="img-fluid d-block mx-auto">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bb-5.jpg" alt="img5" class="img-fluid d-block mx-auto">
       </div>
     </div>
   </div>
-  <div class="row">
-    <section class="home-copy">
-      <h2 class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">Modern &amp; Contemporary</h2>
-      <div class="body-copy col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">  
-        <p>With clean lines and monochromatic colors, the Bar Bench is a stylish piece of contemporary furniture. But it's much more than a storage cabinet. Sit down, wheel around, share a drink. The Bar Bench brings a spark of fun to an office, and it brings co-workers together. </p>
-      </div>
-      <h2 class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">Stir Creativity</h2>
-      <div class="body-copy col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">  
-        <p>Good ideas come from anyone and anywhere. But it takes a team to make a good idea a great one, and the Bar Bench is a platform for employees to bring out each other's best. Make the Bar Bench a break from the cubicle or the center of your next meeting. The possibilities are endless. </p>
-      </div>  
-    </section>
-  </div>
-  <div class="row">
-    <section id="product">
-      <h1 class="col-md-10 col-md-offset-1 col-xs-12">A Quality Product</h1>
-      <h2 class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">Elegantly Designed</h2>
-      <img src="img/bb-3.jpg" alt="img3" class="product-image center-block img-responsive">
-      <img src="img/bb-4.jpg" alt="img4" class="product-image center-block img-responsive">
-      <img src="img/bb-5.jpg" alt="img5" class="product-image center-block img-responsive">
+  <section class="home-copy home-row col-lg-8 col-sm-10 col-xs-12 offset-lg-2 offset-md-1">
+    <h2 class="col-md-8 offset-md-2 col-10 col-offset-1">Modern &amp; Contemporary</h2>
+    <div class="body-copy col-md-8 offset-md-2 col-10 col-offset-1">  
+      <p>With clean lines and monochromatic colors, the Bar Bench is a stylish piece of contemporary furniture. But it's much more than a storage cabinet. Sit down, wheel around, share a drink. The Bar Bench brings a spark of fun to an office, and it brings co-workers together. </p>
+    </div>
+    <h2 class="col-md-8 offset-md-2 col-10 col-offset-1">Stir Creativity</h2>
+    <div class="body-copy col-md-8 offset-md-2 col-10 col-offset-1">  
+      <p>Good ideas come from anyone and anywhere. But it takes a team to make a good idea a great one, and the Bar Bench is a platform for employees to bring out each other's best. Make the Bar Bench a break from the cubicle or the center of your next meeting. The possibilities are endless. </p>
+    </div>  
+  </section>
+  <section id="product" class="home-row col-lg-8 col-sm-10 col-xs-12 offset-lg-2 offset-md-1">
+    <h1 class="col-md-10 offset-md-1 col-12">A Quality Product</h1>
+    <h2 class="col-md-8 offset-md-2 col-10 col-offset-1">Elegantly Designed</h2>
+    <img src="img/bb-3.jpg" alt="img3" class="product-image d-block mx-auto img-fluid">
+    <img src="img/bb-4.jpg" alt="img4" class="product-image d-block mx-auto img-fluid">
+    <img src="img/bb-5.jpg" alt="img5" class="product-image d-block mx-auto img-fluid">
 
-      <h2 class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">A Great Opportunity</h2>
-      <div class="container col-md-4 col-md-offset-2 col-xs-12">
-        <img src="img/bb-mock.jpg" alt="mockup" class="product-image">
-
-      </div>
-      <div class="body-copy sketch-copy col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">  
-        <p>Additional funding will bring the Bar Bench to the next level. Technological upgrades to the design will bridge office furniture and innovation. </p>
-      </div>
-    </section>
-  </div>
-  <div class="row">
-    <section id="about">
-      <h1 class="col-md-10 col-md-offset-1 col-xs-12">Meet The Team</h1>
-      <h2 class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">The Young Creatives</h2>
-      <div class="body-copy col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">  
-        <p>The Bar Bench masterminds are a group of advertising interns in New York City: Mickey Coey, Jon Simonides, Ella D'souza, Howard Tseng, Amy Tsai and Adam Bouzourene.</p>
-      </div> 
-    </section>
-  </div>
-  <div class="row">
-    <section id="contact">
-      <h1 class="col-md-10 col-md-offset-1 col-xs-12">Contact Us</h1>
-      <h2 class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">Get In Touch</h2>
-      <div class="body-copy col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">  
-        <p>The Bar Bench is looking for investors and brand partners for its upcoming campaign launch.</p>
-      </div> 
-      <section class="contact-col">
-        <div class="contact-cell col-md-4 col-md-offset-1 col-xs-10 col-xs-offset-1">
-          <h3>Phone:</h3>
-          <ul>
-            <li>Ammirati Office: (212) 925-2111</li>
-          </ul>
-        </div>
-        <div class="contact-cell col-md-4 col-md-offset-1 col-xs-10 col-xs-offset-1">
-          <h3>Email:</h3>
-          <ul>
-            <li>Jonathan Simondides: <a href="mailto:jsimonides@ammirati.com">jsimonides@ammirati.com</a> </li>
-          </ul>
-        </div>
-        <div class="contact-cell col-md-4 col-md-offset-1 col-xs-10 col-xs-offset-1">
-          <h3>Addresses:</h3>
-          <ul>
-            <li>Ammirati Office: 19 Union Square W, New York, NY 10003</li>
-          </ul>
-        </div>
-        <div class="contact-cell col-md-4 col-md-offset-1 col-xs-10 col-xs-offset-1">
-          <h3>Map:</h3>
-          <iframe class="grey-map" height="350px" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1780332913!2d-73.991242!3d40.7361079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599885b0d95d%3A0x39fe52cc473298b2!2s19+Union+Square+W%2C+New+York%2C+NY+10003!5e0!3m2!1sen!2sus!4v1438783635756"></iframe>
-        </div>
-      </section>
-    </section>
-  </div>
-  <div class="row">
-    <section class="footer col-xs-12">
-      <div class="footer-container">
-        <img id="home" class="footer-icon col-xs-2" src="img/bar-bench.svg" alt=""/>
-        <ul class="footer-info col-md-2 col-xs-3">
-          <li>
-            37 Barbench Road
-          </li>
-          <li>
-            517-564-6575
-          </li>
-          <li>
-            Internsection
-          </li>
-          <li>
-            BB@bar-bench.com
-          </li>
-        </ul>
-        <ul id="social" class="col-sm-5 col-md-push-3 col-xs-6 col-xs-push-1">
-          <li>
-            <a target="_blank" href="https://www.facebook.com/">
-              <img src="img/social/fb.png" alt="facebook" class="soc-icon">
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://twitter.com/">
-              <img src="img/social/twit.png" alt="facebook" class="soc-icon">
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="http://www.youtube.com/">
-              <img src="img/social/yt.png" alt="youtube" class="soc-icon">
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://plus.google.com/">
-              <img src="img/social/gp.png" alt="google plus" class="soc-icon">
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="http://instagram.com/">
-              <img src="img/social/insta.png" alt="instagram" class="soc-icon">
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="http://pinterest.com/">
-              <img src="img/social/pin.png" alt="pinterest" class="soc-icon">
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.linkedin.com/company/">
-              <img src="img/social/li.png" alt="linkedin" class="soc-icon">
-            </a>
-          </li>
+    <h2 class="col-md-8 offset-md-2 col-10 col-offset-1">A Great Opportunity</h2>
+    <div class="d-inline-block col-md-4 offset-md-2 col-12">
+      <img src="img/bb-mock.jpg" alt="mockup" class="product-image">
+    </div>
+    <div class="body-copy sketch-copy d-inline-block col-md-4 offset-md-0 col-10 col-offset-1">  
+      <p>Additional funding will bring the Bar Bench to the next level. Technological upgrades to the design will bridge office furniture and innovation. </p>
+    </div>
+  </section>
+  <section id="about" class="home-row col-lg-8 col-sm-10 col-xs-12 offset-lg-2 offset-md-1">
+    <h1 class="col-md-10 offset-md-1 col-12">Meet The Team</h1>
+    <h2 class="col-md-8 offset-md-2 col-10 col-offset-1">The Young Creatives</h2>
+    <div class="body-copy col-md-8 offset-md-2 col-10 col-offset-1">  
+      <p>The Bar Bench masterminds are a group of advertising interns in New York City: Mickey Coey, Jon Simonides, Ella D'souza, Howard Tseng, Amy Tsai and Adam Bouzourene.</p>
+    </div> 
+  </section>
+  <section id="contact" class="home-row col-lg-8 col-sm-10 col-xs-12 offset-lg-2 offset-md-1">
+    <h1 class="col-md-10 offset-md-1 col-12">Contact Us</h1>
+    <h2 class="col-md-8 offset-md-2 col-10 col-offset-1">Get In Touch</h2>
+    <div class="body-copy col-md-8 offset-md-2 col-10 col-offset-1">  
+      <p>The Bar Bench is looking for investors and brand partners for its upcoming campaign launch.</p>
+    </div> 
+    <section class="contact-col home-row col-lg-8 col-sm-10 col-xs-12 offset-lg-2 offset-md-1">
+      <div class="contact-cell col-md-4 offset-md-1 col-10 col-offset-1">
+        <h3>Phone:</h3>
+        <ul>
+          <li>Ammirati Office: (212) 925-2111</li>
         </ul>
       </div>
+      <div class="contact-cell col-md-4 offset-md-1 col-10 col-offset-1">
+        <h3>Email:</h3>
+        <ul>
+          <li>Jonathan Simondides: <a href="mailto:jsimonides@ammirati.com">jsimonides@ammirati.com</a> </li>
+        </ul>
+      </div>
+      <div class="contact-cell col-md-4 offset-md-1 col-10 col-offset-1">
+        <h3>Addresses:</h3>
+        <ul>
+          <li>Ammirati Office: 19 Union Square W, New York, NY 10003</li>
+        </ul>
+      </div>
+      <div class="contact-cell col-md-4 offset-md-1 col-10 col-offset-1">
+        <h3>Map:</h3>
+        <iframe class="grey-map" height="350px" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.1780332913!2d-73.991242!3d40.7361079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599885b0d95d%3A0x39fe52cc473298b2!2s19+Union+Square+W%2C+New+York%2C+NY+10003!5e0!3m2!1sen!2sus!4v1438783635756"></iframe>
+      </div>
     </section>
-  </div>
+  </section>
+  <section class="footer col-12">
+    <div class="footer-container">
+      <img id="home" class="footer-icon col-2" src="img/bar-bench.svg" alt=""/>
+      <ul class="footer-info col-md-2 col-3">
+        <li>
+          37 Barbench Road
+        </li>
+        <li>
+          517-564-6575
+        </li>
+        <li>
+          Internsection
+        </li>
+        <li>
+          BB@bar-bench.com
+        </li>
+      </ul>
+      <ul id="social" class="col-sm-5 col-md-push-3 col-6 col-push-1">
+        <li>
+          <a target="_blank" href="https://www.facebook.com/">
+            <img src="img/social/fb.png" alt="facebook" class="soc-icon">
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://twitter.com/">
+            <img src="img/social/twit.png" alt="facebook" class="soc-icon">
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="http://www.youtube.com/">
+            <img src="img/social/yt.png" alt="youtube" class="soc-icon">
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://plus.google.com/">
+            <img src="img/social/gp.png" alt="google plus" class="soc-icon">
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="http://instagram.com/">
+            <img src="img/social/insta.png" alt="instagram" class="soc-icon">
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="http://pinterest.com/">
+            <img src="img/social/pin.png" alt="pinterest" class="soc-icon">
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/company/">
+            <img src="img/social/li.png" alt="linkedin" class="soc-icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <script src="bundle.js"></script>
 </body>
 </html>

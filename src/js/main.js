@@ -2,7 +2,9 @@ var scriptsJS = (function($){
 
 
 function scrollEffects() {
-	$('a[href*=#]:not([href=#])').click(function() {
+	var scroll_top = $(this).scrollTop();
+
+	$('a[href*=\\#]:not([href=\\#])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 			var target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -16,7 +18,6 @@ function scrollEffects() {
 	});
 
 	$(window).scroll(function () {
-		var scroll_top = $(this).scrollTop();
 		if (scroll_top >= 1) {
 			$(".nav-bar").addClass("animate");
 			$(".nav-bar").addClass("nav-bar-ghost");
@@ -46,7 +47,6 @@ function scrollEffects() {
 			}
 		}
 		if($(window).width() > 980) {
-			console.log("desktop");
 			if (scroll_top >= 145) {
 				$(".nav-bar").addClass("nav-float");
 			} 
@@ -73,6 +73,10 @@ function init(){
 	$(document).ready(function(){
 		console.log("hey man");
 		scrollEffects();
+		$('.carousel').carousel({
+			interval: 5000,
+			pause: "hover"
+		});
 	});
 }
 

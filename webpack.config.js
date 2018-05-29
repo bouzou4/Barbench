@@ -24,6 +24,17 @@ module.exports = {
           'sass-loader'
         ]
       },
+      { 
+          test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+          loader: "url-loader?limit=10000&mimetype=application/font-woff" },
+      { 
+          test: /\.(ttf)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+          loader: "url-loader?limit=10000&mimetype=application/octet-stream" 
+      },
+      { 
+          test: /\.(eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+          loader: "file" 
+      },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
@@ -38,7 +49,9 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
-      jQuery: 'jquery'
+      'window.$': 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
     })
   ]
 };

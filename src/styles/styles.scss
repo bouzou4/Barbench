@@ -71,22 +71,22 @@ nav {
 	width: 100%;
 }
 
-.nav-bar {
-	z-index: 999;
-	position: absolute;
-    width: 100%;
-    left: 0;
-	height: 40px;
+.navbar {
+	/* z-index: 999; */
+	/* position: absolute; */
+  width: 100%;
+  left: 0;
+	/* height: 40px; */
 	background-color: rgba(73, 73, 73, 1);
 	color: white;
 	font-size: 10pt;
 	text-align: center;
-    line-height: 40px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
-.nav-bar a {
+.navbar a {
 	color: white;
 	height: 100%;
 	display: inline-block;
@@ -104,7 +104,7 @@ nav {
 	-webkit-transition-duration: 0.3s;
 	transition-duration: 0.3s;
 }
-.nav-bar a:before {
+.navbar a:before {
 	content: "";
 	position: absolute;
 	z-index: -1;
@@ -124,10 +124,10 @@ nav {
 	-webkit-transition-timing-function: ease-out;
 	transition-timing-function: ease-out;
 }
-.nav-bar a:hover, .nav-bar a:focus, .nav-bar a:active {
+.navbar a:hover, .nav-bar a:focus, .nav-bar a:active {
   color: grey;
 }
-.nav-bar a:hover:before, .nav-bar a:focus:before, .nav-bar a:active:before {
+.navbar a:hover:before, .nav-bar a:focus:before, .nav-bar a:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
@@ -147,7 +147,7 @@ nav {
 
 .nav-bar-ghost {
 	opacity: 0.7;
-    background-color: #6D6D6D;
+  background-color: #6D6D6D;
 }
 
 /* End */
@@ -191,7 +191,8 @@ nav {
 .footer-container {
 	height: 100%;
 	margin: 0 auto;
-	display: flex;
+	display: block;
+	align-items: center;
 }
 
 #social {
@@ -199,7 +200,6 @@ nav {
 	filter: invert(100%);
 	-webkit-filter: invert(100%);
 	padding-left: 0;
-	margin: auto 0;
 }
 
 #social li {
@@ -240,9 +240,8 @@ nav {
 
 /* Site-wide Classes */
 
-.row {
-	width: 90%;
-	margin: 0 auto;
+.home-row {
+
 }
 
 .product-image {

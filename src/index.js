@@ -1,17 +1,16 @@
 import 'normalize.css';
 import 'popper.js';
 import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './js/main.js';
 import './styles/styles.scss';
 
-function component() {
-    var element = document.createElement('div');
+// function app() {
+//     var element = document.createElement('div');
 
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+//     element.innerHTML = '<p>Yo wassup </p>';
 
-    element.classList.add('test');
+//     return element;
+//   }
 
-    return element;
-  }
-
-document.body.appendChild(component());
+// document.body.appendChild(app());
