@@ -1,0 +1,38 @@
+{
+  "name": "barbench",
+  "version": "1.0.0",
+  "description": "my research site",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bouzou4/Barbench.git"
+  },
+  "author": "Adam Bouzourene",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bouzou4/Barbench/issues"
+  },
+  "homepage": "https://github.com/bouzou4/Barbench#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.9.0",
+    "normalize.css": "^8.0.0",
+    "npm": "^6.1.0",
+    "owl-carousel": "^1.0.0",
+    "popper.js": "^1.14.3",
+    "slicknav": "^1.0.8"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.10.0",
+    "webpack-cli": "^2.1.4"
+  }
+}
