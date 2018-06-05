@@ -1,8 +1,11 @@
+// protect the namespace!
 var scriptsJS = (function($){
 
-
+//  ==========================================================================
+//  Scrolling Code
+//  ==========================================================================	
 function scrollEffects() {
-
+	// initialize smooth scrolling on same-page links
 	$('a[href*=\\#]:not([href=\\#])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 			var target = $(this.hash);
@@ -16,10 +19,7 @@ function scrollEffects() {
 		}
 	});
 
-	$("nav").hover(function() {
-		$(".navbar").removeClass("nav-bar-ghost");
-	});
-
+	// sticky nav code (used to use slicknav.js)
 	$(window).scroll(function () {
 		var scroll_top = $(this).scrollTop();
 		
@@ -60,6 +60,11 @@ function scrollEffects() {
 			$('[data-fade]').addClass('fadeInUp');
 		}
 	});
+
+	// bring back nav on hover
+	$("nav").hover(function() {
+		$(".navbar").removeClass("nav-bar-ghost");
+	});
 }
 
 
@@ -70,7 +75,7 @@ function init(){
 	$(document).ready(function(){
 		console.log("hey man");
 		scrollEffects();
-		$('.carousel').carousel({
+		$('.carousel').carousel({ 
 			interval: 5000,
 			pause: "hover"
 		});
@@ -83,4 +88,5 @@ function init(){
 	};
 
 })(jQuery);
+
 scriptsJS.init();
